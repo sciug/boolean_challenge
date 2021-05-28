@@ -1,0 +1,197 @@
+*{box-sizing: border-box;}
+body{margin:0;
+font-family: 'Poppins', sans-serif;
+font-size: 1rem;
+color:#FBFBFB;
+}
+
+
+
+
+.header, .buttons{
+  text-align: center;
+}
+
+
+
+
+.background{background-image: url(../img/background.jpg);
+background-position: center;
+background-size: cover;
+padding:5em;}
+
+
+
+
+.container{
+  background:rgba(0, 0,0, 0.5);
+  padding: 7em 5em;
+  border-radius: 50px;
+  max-width: 90%;
+  margin: auto;
+}
+
+
+
+
+.logo{
+  max-width:20%;
+  margin:0;
+}
+
+
+
+/* ----------TIPOGRAPHY-------------- */
+
+.header-title{
+  margin-top:0;
+  font-weight: 200;
+  margin-bottom:.5em;
+  letter-spacing: 2px;
+}
+.color-accent{
+  font-weight: 600;
+  color: #00DD00;
+}
+
+
+.info-mono-title{
+  letter-spacing: 2px;
+  margin:0;
+}
+.info-mono-text{
+  font-weight: 600;
+}
+
+.distance{
+  font-weight: 200;
+  margin-left: 1em;
+  font-size:.7rem;
+  letter-spacing: 2px;
+
+}
+
+
+.carica-text{
+  font-size: .6rem;
+  margin-top:.3em;
+  letter-spacing: 2px;
+
+}
+
+
+
+
+/* -------------BUTTONS------------- */
+.buttons{
+  background: #00DD00;
+  padding: 1em 0;
+  border-radius: 15px;
+}
+
+
+
+.btn{margin-right: .5em;
+margin-left: .5em;
+font-family: 'Poppins', sans-serif;
+border: none;
+background-color:white;
+color:#00DD00;
+font-size: .8rem;
+font-weight: 400;
+padding:.2em 1.5em;
+border-radius: 10px;
+transform: scale(1);
+transition: transform 250ms;
+}
+
+.btn:hover, .btn:focus{
+  transform: scale(1.1);
+}
+
+
+
+
+/* ---------MONOPATTINO SECTION----------- */
+
+
+
+.info-monopattino{
+  margin:0;
+  margin-top:3em;
+
+}
+
+.info-mono-title,
+.info-mono-text,
+.carica-text{
+  margin:0
+}
+
+
+.info-box{
+  display: flex;
+  align-items:center;
+
+}
+
+.carica-stato{
+  height: 2em;
+  border-radius: 5px;
+}
+
+/* --------BATTERY STATE------------ */
+
+.high-battery{
+  background: #00DD00;
+  width:60%;
+
+}
+
+.medium-battery{
+  background: #FFBC42;
+  width:30%;
+}
+
+.low-battery{
+  background: #D81159;
+  width:15%;
+
+}
+
+@media(max-width:800px){
+
+
+  .container{
+  min-width: 350px;}
+
+ .logo{min-width:90%}
+
+
+
+  .buttons{
+    display: flex;
+    flex-direction: column;
+    background: none;
+  }
+  .btn{margin:0;
+  margin-bottom: 1em;
+  padding:2em 3em;
+}
+
+.checkbox{
+  transform: scale(1.5);
+}
+
+
+.info-mono-title{
+line-height: 1em;
+margin-left: .5em;
+}
+
+.distance{
+  display: block;
+  margin:0;
+}
+
+}
